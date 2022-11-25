@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@mipmap/ic_background_image"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessLeaf" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="384dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="250sp"
+            android:text="@string/welcome_to_my_app"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="30sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btSyning"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100sp"
+            android:text="@string/Syning"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
